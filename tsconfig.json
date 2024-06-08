@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "strict": true,
+    "skipLibCheck": true,
+    "types": [
+      "node"
+    ],
+    "jsx": "react-jsx",
+    "jsxImportSource": "hono/jsx",
+    "paths": {
+      "@/*": [
+        "src/*"
+      ],
+      "@pkgJSON": [
+        "package.json"
+      ]
+    }
+  },
+  "include": [
+    "src/**/*",
+    "package.json",
+    "eslint.config.mjs",
+    "tailwind.config.js"
+  ]
+}
