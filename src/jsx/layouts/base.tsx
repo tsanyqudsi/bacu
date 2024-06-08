@@ -1,8 +1,7 @@
-import type { FC } from 'hono/jsx'
-import { JSX } from 'hono/jsx/jsx-runtime'
+import type { Child, FC } from 'hono/jsx'
 import packageJSON from '@pkgJSON'
 
-type BaseProps = { children: JSX.Element, title: string, lang: string }
+type BaseProps = { children: Child, title: string, lang: string }
 
 export const BaseLayout: FC<BaseProps> = (props) => {
   return (

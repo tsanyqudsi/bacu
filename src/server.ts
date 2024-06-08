@@ -1,6 +1,6 @@
 import { Hono } from "hono";
 import { serve } from "@hono/node-server";
-import { welcomeScript } from "./welcome-ascii";
+import { welcomeScript } from "#/server/welcome-ascii";
 export const app = new Hono();
 
 export const server = (inputPort?: string) => {

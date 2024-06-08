@@ -1,5 +1,5 @@
 import { server } from "./server";
-import './routes'
 import './middlewares/index'
+import './routes'
 
 server(process.env.PORT)

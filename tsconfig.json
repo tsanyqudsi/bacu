@@ -7,13 +7,16 @@
     "strict": true,
     "skipLibCheck": true,
     "types": [
-      "node"
+      "node",
     ],
     "jsx": "react-jsx",
     "jsxImportSource": "hono/jsx",
     "paths": {
       "@/*": [
         "src/*"
+      ],
+      "#/*": [
+        "libs/*"
       ],
       "@pkgJSON": [
         "package.json"
@@ -22,8 +25,9 @@
   },
   "include": [
     "src/**/*",
+    "libs/**/*",
     "package.json",
     "eslint.config.mjs",
-    "tailwind.config.js"
+    "tailwind.config.js",
   ]
 }

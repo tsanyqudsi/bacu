@@ -3,7 +3,7 @@ import { app } from "./server";
 import { NotFoundPage } from './jsx/pages/NotFound';
 
 app.get("/", (c) => {
-  return c.text("Hello Hono!");
+  return c.render(<p>hi</p>, { title: 'Home', lang: 'en' });
 });
 
 // Serve static files
@@ -14,6 +14,6 @@ app.get(
 
 // Catch all routes for 404
 app.get('*', (c) => {
-  return c.html(<NotFoundPage />)
+  return c.render(<NotFoundPage />, { title: 'Not Found', lang: 'en' });
 })
 
